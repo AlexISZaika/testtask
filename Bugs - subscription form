@@ -1,0 +1,197 @@
+Zaika Alexander - QA Test Task DB2 limited
+
+Bugs: 
+
+Summary: The “Subscribe” button doesn’t work
+Status: Created
+Description:
+Steps To Reproduce: 
+1)	Navigate to https://qa.db2dev.com/ page
+2)	Click on “Subscribe” in to platinum plan of subscription
+
+Actual Result: Payment form is not appeared. User does not get any result after clicking on 
+Expected Result: Payment form should appear as showed on mockup https://www.dropbox.com/s/0n656jagvzgygse/2018-02-12%2012.41.41.jpg?dl=0
+OR user should receive a message that says that functionality in development stage and will be workable in a while.
+Attachments: 
+Priority: High
+Severity: Critical
+
+_______________________________________________________________________________________
+Summary: The “Billing address” field displays in payment form 
+Status: Created
+Description:
+The “Billing address” field shouldn’t be in payment form accordingly to mockup https://www.dropbox.com/s/0n656jagvzgygse/2018-02-12%2012.41.41.jpg?dl=0
+Steps To Reproduce: 
+1)	Navigate to https://qa.db2dev.com/ page
+2)	Click on “Subscribe” button in the gold, silver or bronze subscription plans 
+3)	Take a look at the mockup https://www.dropbox.com/s/0n656jagvzgygse/2018-02-12%2012.41.41.jpg?dl=0 and payment form
+
+Actual Result: The “Billing address” field displays in payment form
+Expected Result: There shouldn’t be that field at all 
+Attachments: 
+Priority: Medium
+Severity: Medium
+
+_______________________________________________________________________________________
+Summary: The “Card number” field is not validated
+Status: Created
+Description:
+User can input all the characters in the “Card number” field. Field must accept only numeral characters though. 
+Steps To Reproduce: 
+1)	Navigate to https://qa.db2dev.com/ page
+2)	Click on “Subscribe” button in the gold, silver or bronze subscription plans 
+3)	Insert alphabetical or special characters to the “Card number” field
+
+Actual Result: Input was accepted successfully by field
+Expected Result: Field should accept only numeral characters 
+Attachments: 
+Priority: Medium	
+Severity: Low
+
+_______________________________________________________________________________________
+Summary: Year in “Expiry date” field can be lower than current one
+Status: Created
+Description:
+Steps To Reproduce: 
+1)	Navigate to https://qa.db2dev.com/ page
+2)	Click on “Subscribe” button in the gold, silver or bronze subscription plans 
+3)	Fill out all the fields with valid values except “Expiry date” field (type year lower than current one)
+4)	Click on “Pay”
+
+Actual Result: The form is accepted. User can see next step of buying subscription plan
+Expected Result: An “Invalid expiry date” warning message should appear in the case described above.
+Attachments: 
+Priority: Medium	
+Severity: High
+
+_______________________________________________________________________________________
+Summary: The warning message “Enter valid CV” appears below “Expiry date” field
+Status: Created
+Description:
+Steps To Reproduce: 
+1)	Navigate to https://qa.db2dev.com/ page
+2)	Click on “Subscribe” button in the gold, silver or bronze subscription plans 
+3)	Fill out all the fields with valid values except “CV Code” field (leave it empty)
+4)	Click on “Pay”
+
+Actual Result: : The warning message “Enter valid CV” appears below “Expiry date” field
+Expected Result: The warning message “Enter valid CV” should appear below “CV Code” field
+Attachments: 
+Priority: Low
+Severity: Low
+
+_______________________________________________________________________________________
+Summary: The “Your name” field accepts one word.
+Status: Created
+Description:
+Steps To Reproduce: 
+1)	Navigate to https://qa.db2dev.com/ page
+2)	Click on “Subscribe” button in the gold, silver or bronze subscription plans 
+3)	Filled out the “Your name” field with only one word
+4)	Click on “Pay”
+
+Actual Result: A warning message doesn’t appear 
+Expected Result: A warning message should appear and say “Type name from your card”
+Attachments: 
+Priority: Medium	
+Severity: High
+
+_______________________________________________________________________________________
+Summary: Wrong name and tip in the “Your Name” field
+Status: Created
+Description:
+Bug is regarding to application and specification. 
+Need to change name and tip of the “Your Name” field. Because it’s causing a lot of trouble to identify owner of the card. 
+Steps To Reproduce: 
+
+Actual Result: Now user can type only one word in the filed because of its name
+Expected Result: Need to change name of the field to “CARDHOLDER NAME” and tip in the field “Name on the card”
+Attachments: 
+Priority: Low
+Severity: Medium
+
+_______________________________________________________________________________________
+Summary: Warning messages are not disappeared if more than one subscription plan was opened
+Status: Created
+Description:
+Steps To Reproduce: 
+1)	Navigate to https://qa.db2dev.com/ page
+2)	Click on “Subscribe” button in the gold, silver or bronze subscription plans 
+3)	Click on “Pay”
+4)	Close payment form 
+5)	Open another payment form by clicking on “Subscribe” button 
+
+Actual Result: All the warning messages are still displayed
+Expected Result: Payment form should be opened like after 2) second step – only fields w/out warnings
+Attachments: 
+Priority: Low	
+Severity: Low 
+
+_______________________________________________________________________________________
+Summary: Mistake in the warning message below “Expiry date” field 
+Status: Created
+Description:
+Steps To Reproduce: 
+1)	Navigate to https://qa.db2dev.com/ page
+2)	Click on “Subscribe” button in the gold, silver or bronze subscription plans 
+3)	Click on “Pay”
+4)	Take a look at warning message below expiry date field
+Actual Result: The message has a mistake “Date filed is required”
+Expected Result: The message should say “Date field is required”
+Attachments: 
+Priority: Low	
+Severity: Low 
+
+_______________________________________________________________________________________
+Summary: The “Your Name” field is not validated
+Status: Created
+Description:
+User can input all the characters in the “Your Name” field. Field must accept only alphabetical characters though. 
+Steps To Reproduce: 
+1)	Navigate to https://qa.db2dev.com/ page
+2)	Click on “Subscribe” button in the gold, silver or bronze subscription plans 
+3)	Type numeral or special characters to the “Your Name” field
+4)	Click on “Pay”
+
+Actual Result: Input was accepted successfully by field
+Expected Result: Field should accept only alphabetical characters and shows warning message if it has some other ones (Message: “Please enter valid first and last name”)
+Attachments: 
+Priority: Medium	
+Severity: Low
+
+_______________________________________________________________________________________
+Summary: User cannot close payment form if click on right area next to it
+Status: Created
+Description:
+Steps To Reproduce: 
+1)	Navigate to https://qa.db2dev.com/ page
+2)	Click on “Subscribe” button in the gold, silver or bronze subscription plans 
+3)	Click on Right area next to payment form 
+
+Actual Result: Payment form can’t be close
+Expected Result: Payment form shall close if user clicks in any empty area next to it because it has no any button to be closed. 
+Attachments: 
+Priority: Low
+Severity: Medium
+
+_______________________________________________________________________________________
+Summary: The ”Remember” radio button doesn’t work
+Status: Created
+Description:
+Steps To Reproduce: 
+1)	Navigate to https://qa.db2dev.com/ page
+2)	Click on “Subscribe” button in the gold, silver or bronze subscription plans 
+3)	Check the radio button and uncheck it 
+4)	Filled all the fields 
+5)	Open another payment form by clicking on “Subscribe” button 
+
+Actual Result: All the inserted inputs were successfully remembered by application
+Expected Result: Application should remember user’s inserted data only if radio button was checked 
+Attachments: 
+Priority: Medium
+Severity: Medium
+
+_______________________________________________________________________________________
+Bugs and improvements that need more analysis: 
+1)	I don’t know what is that and what it should do. Need to check it in documentation and ask the question to PM or PO 
+2)	Why Billing Address field is absent on mockup. In my opinion it should be just for UX. OR/AND need to add email address instead. (Of course if user was not logged in earlier in the application or on the website)
